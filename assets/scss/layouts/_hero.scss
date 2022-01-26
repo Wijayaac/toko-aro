@@ -1,0 +1,44 @@
+.hero {
+  --gap: 4rem;
+  display: flex;
+  gap: var(--gap, 2rem);
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  max-width: 90vw;
+  margin-inline: auto;
+
+  &__image {
+    background-color: rgba(129, 129, 129);
+    width: 400px;
+    height: 400px;
+  }
+  &__text {
+    max-width: 40%;
+  }
+  &__heading,
+  &__sub-heading,
+  &__button-cta {
+    text-transform: uppercase;
+  }
+  &__heading {
+    font-size: 2rem;
+  }
+  &__sub-heading {
+    font-size: 5rem;
+  }
+  &__button-cta {
+    font-size: 2.5rem;
+    line-height: 4rem;
+
+    background-color: $white;
+
+    outline: none;
+    border: none;
+    border-radius: 3rem;
+
+    margin-block-start: 2rem;
+    padding-inline: 1.5em;
+  }
+}
