@@ -1,0 +1,18 @@
+.footer {
+  padding: 3em 0;
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  &__social-lists {
+    display: inline-flex;
+    margin-top: 1rem;
+  }
+  &__social-item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+  &__item-menu:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
